@@ -5,11 +5,11 @@ import {
   FileText,
   Shield,
   PenSquare,
-  Menu,
 } from "lucide-react";
 
 const Landing = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+
+    
 
   const features = [
     {
@@ -100,20 +100,6 @@ const Landing = () => {
             </button>
           </div>
         </div>
-
-        {menuOpen && (
-          <div className="mt-4 flex flex-col space-y-3 md:hidden">
-            <a href="#" className="text-gray-400 hover:text-white">
-              Features
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              About
-            </a>
-            <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg font-medium">
-              Get Started
-            </button>
-          </div>
-        )}
       </nav>
 
       {/* Hero */}
